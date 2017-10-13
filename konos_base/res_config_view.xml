@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- Base Config Settings Form View -->
+		<record id="view_konos_base_configuration" model="ir.ui.view">
+			<field name="name">konos.base.settings</field>
+			<field name="model">konos.base.config.settings</field>
+			<field name="arch" type="xml">
+				<form string="Configure" class="oe_form_configuration" version="8.0">
+					<header>
+						<button string="Apply" type="object" name="execute" class="oe_highlight" />
+						or
+						<button string="Cancel" type="object" name="cancel" class="oe_link" />
+					</header>
+
+					<separator string="Konos Easy Wizard" />
+					<div>
+						<p>
+							<label
+								string="Easily configure your options." />
+						</p>
+					</div>
+
+
+					<separator string="Partners" />
+					<group>
+						<label for="id" string="RUT (VAT) Validation"/>
+						<div name="partners">
+							<div name='module_l10n_cl_base_rut'>
+								<field name="module_l10n_cl_base_rut"
+									class="oe_inline"/>
+								<label for="module_l10n_cl_base_rut" />
+							</div>
+
+						</div>
+					</group>
+
+
+
+
+					
+					<separator string="Finance" />
+					<group>
+						<label for="id" string="Finance" />	
+
+						<!-- module_decimal_precision_currency -->
+
+						<div name="finance">
+
+							<div name='module_l10n_cl_chart_of_account'>
+								<field name="module_l10n_cl_chart_of_account"
+									class="oe_inline" />
+								<label for="module_l10n_cl_chart_of_account" />
+							</div>			
+							
+							<div name='module_l10n_cl_banks_sbif'>
+								<field name="module_l10n_cl_banks_sbif"
+									class="oe_inline" />
+								<label for="module_l10n_cl_banks_sbif" />
+							</div>
+							<div name='module_l10n_cl_financial_indicators'>
+								<field name="module_l10n_cl_financial_indicators"
+									class="oe_inline" />
+								<label for="module_l10n_cl_financial_indicators" />
+							</div>
+							<div name='module_l10n_cl_libro_compra_venta'>
+								<field name="module_l10n_cl_libro_compra_venta"
+									class="oe_inline" />
+								<label for="module_l10n_cl_libro_compra_venta" />
+							</div>
+						</div>
+					</group>
+
+					<separator string="Purchases" />
+
+					<separator string="Sales" />
+
+
+					<group>
+						<label for="id" string="Partner Activities" />
+						<div name="partneractivities">
+							<div name='module_l10n_cl_partner_activities'>
+								<field name="module_l10n_cl_partner_activities" class="oe_inline" />
+								<label for="module_l10n_cl_partner_activities" />
+							</div>
+						</div>
+					</group>
+					<group>
+						<label for="id" string="Invoicing" />	
+						<div name="invoicing">
+							<div name='module_l10n_cl_invoice'>
+								<field name="module_l10n_cl_invoice" class="oe_inline" />
+								<label for="module_l10n_cl_invoice" />
+							</div>
+							<div name='module_l10n_cl_counties'>
+								<field name="module_l10n_cl_counties"
+									class="oe_inline" />
+								<label for="module_l10n_cl_counties" />
+							</div>	
+							<div name='module_l10n_cl_dte'>
+								<field name="module_l10n_cl_dte"
+									class="oe_inline" />
+								<label for="module_l10n_cl_dte" />
+							</div>	
+							<div name='module_l10n_cl_dte_caf'>
+								<field name="module_l10n_cl_dte_caf"
+									class="oe_inline" />
+								<label for="module_l10n_cl_dte_caf" />
+							</div>	
+							<div name='module_l10n_cl_dte_factoring'>
+								<field name="module_l10n_cl_dte_factoring"
+									class="oe_inline" />
+								<label for="module_l10n_cl_dte_factoring" />
+							</div>	
+							<div name='module_l10n_cl_stock_picking'>
+								<field name="module_l10n_cl_stock_picking"
+									class="oe_inline" />
+								<label for="module_l10n_cl_stock_picking" />
+							</div>
+							<div name='module_l10n_cl_dte_point_of_sale'>
+								<field name="module_l10n_cl_dte_point_of_sale"
+									class="oe_inline" />
+								<label for="module_l10n_cl_dte_point_of_sale" />
+							</div>					
+	
+						</div>
+					</group>
+
+
+
+					<separator string="Human Resources" />
+					<group>
+						<label for="id" string="Payroll" />
+						<div name="payroll">
+							<div name='module_l10n_cl_hr_payroll'>
+								<field name="module_l10n_cl_hr_payroll" class="oe_inline" />
+								<label for="module_l10n_cl_hr_payroll" />
+							</div>
+						</div>
+
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<!-- Base Config Settings Action -->
+		<record id="action_konos_base_configuration" model="ir.actions.act_window">
+			<field name="name">Configure</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">konos.base.config.settings</field>
+			<field name="view_mode">form</field>
+			<field name="target">inline</field>
+		</record>
+
+		<!-- Base Config Settings Menu -->
+		<menuitem id="menu_konos_base_configuration"
+			action="action_konos_base_configuration"
+			name="Konos Wizard" parent="base.menu_config" sequence="110" />
+
+	</data>
+</openerp>
