@@ -73,7 +73,7 @@ receipts stubs with journals for easiest configuration.""")
 
 
     module_l10n_cl_partner_activities = fields.Boolean(
-        'Include Partner\'s turn', help="""Installs l10n_cl_partner_activities
+        'Include Partner\'s Businness Activities', help="""Installs l10n_cl_partner_activities
 module, which includes your partners' turns in their record using the SII
 activities table and allows you to select the activity when invoicing.""")
 
@@ -87,4 +87,39 @@ modules""")
         'Validate Chilean VAT (RUT) and format to 99.999.999-X',
         help="""Installs l10n_cl_base_rut in ordar to validate de VAT (RUT) \
         ant to have it formatted correctly, according Chilean usage.""")
+
+
+    module_base_currency_inverse_rate = fields.Boolean(
+        'Base Currency Inverse Rate',
+        help="""Installs base_currency_inverse_rate.""")
+
+    module_decimal_precision = fields.Boolean(
+        'Decimal Precision',
+        help="""Installs decimal_precision in ordar to validate de VAT (RUT) \
+        ant to have it formatted correctly, according Chilean usage.""")
+
+    module_decimal_precision_currency = fields.Boolean(
+        'Decimal Precision Currency',
+        help="""Installs module_decimal_precision_currency.""")
+    
+    module_mass_editing = fields.Boolean(
+        'Mass Editing',
+        help="""Installs module_mass_editing.""")
+
+    module_global_discount = fields.Boolean(
+        'Global Discount',
+        help="""Installs module_global_discount.""")
+    
+    module_account_cancel = fields.Boolean(
+        'Account Cancel',
+        help="""Installs module_account_cancel.""")
+
+    module_web_export_view = fields.Boolean(
+        'Excel Export',
+        help="""Installs module_web_export_view.""")
+    
+    module_account_payment_group = fields.Boolean(
+        'Payment Group',
+        help="""Installs module_account_payment_group.""")
+
 

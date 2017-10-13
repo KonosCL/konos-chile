@@ -1,720 +1,494 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* konos_base
+# 	* l10n_cl_base
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 9.0c-20170207\n"
+"Project-Id-Version: Odoo Server 8.0-20151008\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-13 19:40+0000\n"
-"PO-Revision-Date: 2017-10-13 16:47-0300\n"
-"Last-Translator: Nelson Ramírez <info@konos.cl>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2015-11-10 04:45+0000\n"
+"PO-Revision-Date: 2015-11-10 01:47-0300\n"
+"Last-Translator: Daniel Blanco - Blanco Martín & Asociados "
+"<daniel@blancomartin.cl>\n"
+"Language-Team: Blanco Martín & Asociados <info@blancomartin.cl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
 "Language: es_CL\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#. module: konos_base
-#: model:ir.ui.view,arch_db:konos_base.view_konos_base_configuration
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_fantasy_name:0
+#, fuzzy
+msgid "Add Fantasy Name to Partners"
+msgstr "Agrega Nombre de Fantasía a los Clientes/Proveedores"
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_fantasy_name:0
+#, fuzzy
 msgid ""
-"<?xml version=\"1.0\"?>\n"
-"<form string=\"Configure\" class=\"oe_form_configuration\" version=\"8.0\">\n"
-"\t\t\t\t\t<header>\n"
-"\t\t\t\t\t\t<button string=\"Apply\" type=\"object\" name=\"execute\" class=\"oe_highlight\"/>\n"
-"\t\t\t\t\t\tor\n"
-"\t\t\t\t\t\t<button string=\"Cancel\" type=\"object\" name=\"cancel\" class=\"oe_link\"/>\n"
-"\t\t\t\t\t</header>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Konos Easy Wizard\"/>\n"
-"\t\t\t\t\t<div>\n"
-"\t\t\t\t\t\t<p>\n"
-"\t\t\t\t\t\t\t<label string=\"Easily configure your options.\"/>\n"
-"\t\t\t\t\t\t</p>\n"
-"\t\t\t\t\t</div>\n"
-"\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Partners\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"RUT (VAT) Validation\"/>\n"
-"\t\t\t\t\t\t<div name=\"partners\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_base_rut\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_base_rut\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_base_rut\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\t\t\t\t\t\n"
-"\t\t\t\t\t<separator string=\"Finance\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Finance\"/>\t\n"
-"\n"
-"\t\t\t\t\t\t<!-- module_decimal_precision_currency -->\n"
-"\n"
-"\t\t\t\t\t\t<div name=\"finance\">\n"
-"\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_chart_of_account\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_chart_of_account\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_chart_of_account\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\t\t\n"
-"\t\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_banks_sbif\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_banks_sbif\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_banks_sbif\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_financial_indicators\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_financial_indicators\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_financial_indicators\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_libro_compra_venta\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_libro_compra_venta\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_libro_compra_venta\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Purchases\"/>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Sales\"/>\n"
-"\n"
-"\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Partner Activities\"/>\n"
-"\t\t\t\t\t\t<div name=\"partneractivities\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_partner_activities\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_partner_activities\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_partner_activities\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Invoicing\"/>\t\n"
-"\t\t\t\t\t\t<div name=\"invoicing\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_invoice\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_invoice\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_invoice\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_counties\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_counties\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_counties\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_caf\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_caf\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_caf\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_factoring\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_factoring\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_factoring\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_stock_picking\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_stock_picking\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_stock_picking\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_point_of_sale\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_point_of_sale\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_point_of_sale\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\t\t\t\t\n"
-"\t\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Human Resources\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Payroll\"/>\n"
-"\t\t\t\t\t\t<div name=\"payroll\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_hr_payroll\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_hr_payroll\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_hr_payroll\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Recomended\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"All\"/>\n"
-"\t\t\t\t\t\t<div name=\"Decimal Precision\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_decimal_precision\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_decimal_precision\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_decimal_precision\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Decimal Precision Currency\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_decimal_precision_currency\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_decimal_precision_currency\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_decimal_precision_currency\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Mass Editing\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_mass_editing\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_mass_editing\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_mass_editing\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Base Currency Inverse Rate\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_base_currency_inverse_rate\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_base_currency_inverse_rate\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_base_currency_inverse_rate\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Account Cancel\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_account_cancel\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_account_cancel\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_account_cancel\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Web Export View\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_web_export_view\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_web_export_view\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_web_export_view\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Global Discount\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_global_discount\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_global_discount\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_global_discount\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Account Payment Group\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_account_payment_group\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_account_payment_group\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_account_payment_group\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\t\t\t\t\t\t\n"
-"\t\t\t\t\t</group>\n"
-"\t\t\t\t</form>\n"
-"\t\t\t"
+"Add a fields to your partners with their fantasy name, and\n"
+"allows you to search them by this name."
 msgstr ""
-"<?xml version=\"1.0\"?>\n"
-"<form string=\"Configure\" class=\"oe_form_configuration\" version=\"8.0\">\n"
-"\t\t\t\t\t<header>\n"
-"\t\t\t\t\t\t<button string=\"Apply\" type=\"object\" name=\"execute\" class=\"oe_highlight\"/>\n"
-"\t\t\t\t\t\tor\n"
-"\t\t\t\t\t\t<button string=\"Cancel\" type=\"object\" name=\"cancel\" class=\"oe_link\"/>\n"
-"\t\t\t\t\t</header>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Konos Easy Wizard\"/>\n"
-"\t\t\t\t\t<div>\n"
-"\t\t\t\t\t\t<p>\n"
-"\t\t\t\t\t\t\t<label string=\"Easily configure your options.\"/>\n"
-"\t\t\t\t\t\t</p>\n"
-"\t\t\t\t\t</div>\n"
-"\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Partners\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"RUT (VAT) Validation\"/>\n"
-"\t\t\t\t\t\t<div name=\"partners\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_base_rut\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_base_rut\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_base_rut\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\t\t\t\t\t\n"
-"\t\t\t\t\t<separator string=\"Finance\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Finance\"/>\t\n"
-"\n"
-"\t\t\t\t\t\t<!-- module_decimal_precision_currency -->\n"
-"\n"
-"\t\t\t\t\t\t<div name=\"finance\">\n"
-"\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_chart_of_account\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_chart_of_account\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_chart_of_account\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\t\t\n"
-"\t\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_banks_sbif\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_banks_sbif\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_banks_sbif\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_financial_indicators\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_financial_indicators\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_financial_indicators\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_libro_compra_venta\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_libro_compra_venta\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_libro_compra_venta\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Purchases\"/>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Sales\"/>\n"
-"\n"
-"\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Partner Activities\"/>\n"
-"\t\t\t\t\t\t<div name=\"partneractivities\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_partner_activities\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_partner_activities\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_partner_activities\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Invoicing\"/>\t\n"
-"\t\t\t\t\t\t<div name=\"invoicing\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_invoice\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_invoice\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_invoice\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_counties\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_counties\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_counties\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_caf\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_caf\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_caf\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_factoring\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_factoring\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_factoring\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_stock_picking\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_stock_picking\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_stock_picking\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_dte_point_of_sale\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_dte_point_of_sale\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_dte_point_of_sale\"/>\n"
-"\t\t\t\t\t\t\t</div>\t\t\t\t\t\n"
-"\t\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Human Resources\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"Payroll\"/>\n"
-"\t\t\t\t\t\t<div name=\"payroll\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_l10n_cl_hr_payroll\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_l10n_cl_hr_payroll\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_l10n_cl_hr_payroll\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\n"
-"\t\t\t\t\t</group>\n"
-"\n"
-"\t\t\t\t\t<separator string=\"Recomended\"/>\n"
-"\t\t\t\t\t<group>\n"
-"\t\t\t\t\t\t<label for=\"id\" string=\"All\"/>\n"
-"\t\t\t\t\t\t<div name=\"Decimal Precision\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_decimal_precision\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_decimal_precision\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_decimal_precision\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Decimal Precision Currency\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_decimal_precision_currency\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_decimal_precision_currency\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_decimal_precision_currency\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Mass Editing\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_mass_editing\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_mass_editing\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_mass_editing\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Base Currency Inverse Rate\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_base_currency_inverse_rate\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_base_currency_inverse_rate\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_base_currency_inverse_rate\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Account Cancel\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_account_cancel\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_account_cancel\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_account_cancel\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Web Export View\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_web_export_view\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_web_export_view\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_web_export_view\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Global Discount\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_global_discount\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_global_discount\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_global_discount\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t<div name=\"Account Payment Group\">\n"
-"\t\t\t\t\t\t\t<div name=\"module_account_payment_group\">\n"
-"\t\t\t\t\t\t\t\t<field name=\"module_account_payment_group\" class=\"oe_inline\"/>\n"
-"\t\t\t\t\t\t\t\t<label for=\"module_account_payment_group\"/>\n"
-"\t\t\t\t\t\t\t</div>\n"
-"\t\t\t\t\t\t</div>\t\t\t\t\t\t\n"
-"\t\t\t\t\t</group>\n"
-"\t\t\t\t</form>\n"
-"\t\t\t"
+"Agrega un campo a sus clientes o proveedores con su nombre de fantasía y "
+"permite buscarlos por ese nombre."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_account_cancel
-#: field:konos.base.config.settings,module_account_cancel:0
-msgid "Account Cancel"
-msgstr "Cancelar Documento"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_invoice
-#: field:konos.base.config.settings,module_l10n_cl_invoice:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_invoice:0
+#, fuzzy
 msgid "Allows to have your stubs presented to the same sales journal"
-msgstr "Permite usar facturación del tipo chilena"
+msgstr ""
+"Permite que sus talonarios de documentos tributarios sean presentados en el "
+"mismo diario."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_banks_sbif
-#: field:konos.base.config.settings,module_l10n_cl_banks_sbif:0
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_banks_sbif:0
+#, fuzzy
 msgid "Banks in Chile, According SBIF"
-msgstr "Bancos en Chile según la SBIF"
+msgstr "Bancos de Chile, de Acuerdo a nomenclatura de SBIF."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_base_currency_inverse_rate
-#: field:konos.base.config.settings,module_base_currency_inverse_rate:0
-msgid "Base Currency Inverse Rate"
-msgstr "Tasa Inversa de Moneda"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancelar"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_chart_of_account
-#: field:konos.base.config.settings,module_l10n_cl_chart_of_account:0
-msgid "Chart of Accounts SII"
-msgstr "Plan de Cuentas SII"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#: model:ir.ui.menu,name:l10n_cl_base.menu_chilean_base_configuration
+#, fuzzy
+msgid "Chilean Localization"
+msgstr "Localización Chilena"
 
-#. module: konos_base
-#: model:ir.actions.act_window,name:konos_base.action_konos_base_configuration
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#: model:ir.actions.act_window,name:l10n_cl_base.action_chilean_base_configuration
+#, fuzzy
 msgid "Configure"
 msgstr "Configurar"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_counties
-#: field:konos.base.config.settings,module_l10n_cl_counties:0
-msgid "Counties in Chile"
-msgstr "Comunas en Chile"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_create_uid
-#: field:konos.base.config.settings,create_uid:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,create_uid:0
+#, fuzzy
 msgid "Created by"
 msgstr "Creado por"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_create_date
-#: field:konos.base.config.settings,create_date:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,create_date:0
+#, fuzzy
 msgid "Created on"
 msgstr "Creado en"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_caf
-#: field:konos.base.config.settings,module_l10n_cl_dte_caf:0
-msgid "DTE CAF"
-msgstr "DTE CAF"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Easily configure your options for chilean localization."
+msgstr "Configure fácilmente sus opciones para la Localización Chilena."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_dte
-#: field:konos.base.config.settings,module_l10n_cl_dte:0
-msgid "DTE Chile"
-msgstr "DTE Chile"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_aeroo_einvoice:0
+#, fuzzy
+msgid "Electronic Invoice Format"
+msgstr "Formato de Factura Electrónica"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_factoring
-#: field:konos.base.config.settings,module_l10n_cl_dte_factoring:0
-msgid "DTE Factoring"
-msgstr "DTE Factoring"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_aeroo_stock:0
+#, fuzzy
+msgid "Electronic Stock picking"
+msgstr "Guia de Despacho Electrónica"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_point_of_sale
-#: field:konos.base.config.settings,module_l10n_cl_dte_point_of_sale:0
-msgid "DTE Point of Sales"
-msgstr "DTE Punto de Ventas"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_credit_card_voucher:0
+#, fuzzy
+msgid "Exclude your final consumer credit card sales from VAT report"
+msgstr ""
+"Excluir las ventas con tarjetas de crédito a consumidores finales, de su "
+"reporte de IVA"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_decimal_precision
-#: field:konos.base.config.settings,module_decimal_precision:0
-msgid "Decimal Precision"
-msgstr "Precisión Decimal"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Finance"
+msgstr "Finanzas"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_decimal_precision_currency
-#: field:konos.base.config.settings,module_decimal_precision_currency:0
-msgid "Decimal Precision Currency"
-msgstr "Precisión Decimal en Monedas"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_base_rut:0
+#, fuzzy
+msgid "Format RUT to 99.999.999-X"
+msgstr "Formatear RUT a 99.999.999-X"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_display_name
-#: field:konos.base.config.settings,display_name:0
-msgid "Display Name"
-msgstr "Nombre mostrado"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Human Resources"
+msgstr "Recursos Humanos"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_web_export_view
-#: field:konos.base.config.settings,module_web_export_view:0
-msgid "Excel Export"
-msgstr "Exportación Excel"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_global_discount
-#: field:konos.base.config.settings,module_global_discount:0
-msgid "Global Discount"
-msgstr "Descuento Global"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_stock_picking
-#: field:konos.base.config.settings,module_l10n_cl_stock_picking:0
-msgid "Guías de Despacho Electrónicas"
-msgstr "Guías de Despacho Electrónicas"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_id
-#: field:konos.base.config.settings,id:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,id:0
+#, fuzzy
 msgid "ID"
-msgstr "ID (identificación)"
+msgstr "ID"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_partner_activities
-#: field:konos.base.config.settings,module_l10n_cl_partner_activities:0
-msgid "Include Partner's Businness Activities"
-msgstr "Incluyen giros"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_toponyms:0
+#, fuzzy
+msgid "Include Chilean Counties"
+msgstr "Incluir Comunas Chilenas"
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_hr_payroll
-#: help:konos.base.config.settings,module_l10n_cl_hr_payroll:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_partner_activities:0
+#, fuzzy
+msgid "Include Partner's turn"
+msgstr "Incluir el Giro de Los Clientes/Proveedores"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_account_vat_ledger:0
+#, fuzzy
+msgid "Install VAT Ledger"
+msgstr "Libro de IVA"
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_hr_payroll:0
+#, fuzzy
 msgid ""
 "Install l10n_cl_hr_payroll for payroll and AFPs chilean\n"
 "modules"
-msgstr "Instalar l10n_cl_hr_payroll para nómina y AFPs chilenos módulos"
+msgstr ""
+"Instala l10n_cl_hr_payroll para liquidación de sueldos,\n"
+"incluyendo AFPs chilenas."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_hr_payroll
-#: field:konos.base.config.settings,module_l10n_cl_hr_payroll:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_hr_payroll:0
+#, fuzzy
 msgid "Install payroll and AFPs chilean modules"
-msgstr "Instala Remuneraciones y Previred"
+msgstr ""
+"Instala módulos para liquidación de sueldos,\n"
+"incluyendo AFPs chilenas."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_base_currency_inverse_rate
-#: help:konos.base.config.settings,module_base_currency_inverse_rate:0
-msgid "Installs base_currency_inverse_rate."
-msgstr "Instala Tasa Inversa de Moneda"
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_account_bank_voucher:0
+#, fuzzy
+msgid ""
+"Installs account_bank_voucher, allowing you to reconcile payments\n"
+"to/from partners directly in bank statement."
+msgstr ""
+"Instala el módulo account_bank_voucher, el que le permite registrar ingresos "
+"y egresos de clientes/proveedores mediante la importación directa de los "
+"comprobantes de pago sobre la cartola bancaria."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_decimal_precision
-#: help:konos.base.config.settings,module_decimal_precision:0
-msgid "Installs decimal_precision in ordar to validate de VAT (RUT)         ant to have it formatted correctly, according Chilean usage."
-msgstr "Installs decimal_precision in ordar to validate de VAT (RUT)         ant to have it formatted correctly, according Chilean usage."
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_invoice_printed:0
+#, fuzzy
+msgid ""
+"Installs invoice_printed module, to\n"
+"interact with prnfiscal dependency in your local machine, in order to have "
+"your\n"
+"fiscal documents rendered in TXT format. This allows printing in fiscal\n"
+"printers, or connect to external electronic invoices services"
+msgstr ""
+"Instala el módulo 'invoice_printed', para\n"
+"interactuar con la dependencia 'prnfiscal' en su computador local, para "
+"tener\n"
+"sus documentos fiscales renderizados en formato de texto (TXT). Esto "
+"permite\n"
+"la impresión en impresoras fiscales, o conectar Odoo a servicios externos "
+"de\n"
+"factura electrónica."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_base_rut
-#: help:konos.base.config.settings,module_l10n_cl_base_rut:0
-msgid "Installs l10n_cl_base_rut in ordar to validate de VAT (RUT)         ant to have it formatted correctly, according Chilean usage."
-msgstr "Installs l10n_cl_base_rut in ordar to validate de VAT (RUT)         ant to have it formatted correctly, according Chilean usage."
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_base_rut:0
+#, fuzzy
+msgid ""
+"Installs l10n_cl_base_rut\n"
+"to have the RUT formatted correctly."
+msgstr ""
+"Instala l10n_cl_base_rut para disponer del RUT formateado correctamente."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_invoice
-#: help:konos.base.config.settings,module_l10n_cl_invoice:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_hr_previred:0
+#, fuzzy
+msgid ""
+"Installs l10n_cl_hr_previred module, to update needed indexes\n"
+"in order to issue your payroll"
+msgstr ""
+"Instala el módulo l10n_cl_hr_previred, para actualizar los índices\n"
+"necesarios para realizar su liquidación de sueldos."
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_invoice:0
+#, fuzzy
 msgid ""
 "Installs l10n_cl_invoice Link your invoicing, picking and\n"
 "receipts stubs with journals for easiest configuration."
 msgstr ""
-"Installs l10n_cl_invoice Link your invoicing, picking and\n"
-"receipts stubs with journals for easiest configuration."
+"Instala l10n_cl_invoice, enlazando sus talonarios de facturas,\n"
+"boletas y guías de desapacho con los diarios de ventas/compras\n"
+"para una configuración más sencilla."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_partner_activities
-#: help:konos.base.config.settings,module_l10n_cl_partner_activities:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_partner_activities:0
+#, fuzzy
 msgid ""
 "Installs l10n_cl_partner_activities\n"
 "module, which includes your partners' turns in their record using the SII\n"
 "activities table and allows you to select the activity when invoicing."
 msgstr ""
-"Installs l10n_cl_partner_activities\n"
-"module, which includes your partners' turns in their record using the SII\n"
-"activities table and allows you to select the activity when invoicing."
+"Instala el módulo l10n_cl_partner_activities\n"
+"el que incluye los giros de sus clientes / proveedores en su registro,\n"
+"utilizando la tabla de actividades económicas provista por el SII\n"
+"y le permite seleccionar el giro del cliente cuando se realiza la "
+"facturación."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_libro_compra_venta
-#: help:konos.base.config.settings,module_l10n_cl_libro_compra_venta:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_hr_send_to_previred:0
+#, fuzzy
 msgid ""
-"Installs module  l10n_cl_libro_compra_venta, and includes authorized\n"
-"chart of accounts in Chile."
+"Installs l10n_cl_send_to_previred module, which allows you to\n"
+"send a monthly report with 105 fields per employee, to Previred."
 msgstr ""
-"Installs module  l10n_cl_libro_compra_venta, and includes authorized\n"
-"chart of accounts in Chile."
+"Instala el módulo l10n_cl_send_to_previred, el cual le permite\n"
+"enviar un reporte mensual con los 105 campos por empleado,\n"
+"solicitados por Previred."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_point_of_sale
-#: help:konos.base.config.settings,module_l10n_cl_dte_point_of_sale:0
-msgid "Installs module 10n_cl_dte_point_of_sale, and all DTE requirements."
-msgstr "Installs module 10n_cl_dte_point_of_sale, and all DTE requirements."
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_toponyms:0
+#, fuzzy
+msgid ""
+"Installs l10n_cl_toponyms, which\n"
+"includes all chilean counties to partners."
+msgstr ""
+"Instala l10n_cl_toponyms, el cual\n"
+"incluye todas las comunas y regiones, para ser asignadas a\n"
+"clientes y proveedores."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_banks_sbif
-#: help:konos.base.config.settings,module_l10n_cl_banks_sbif:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_vat:0
+#, fuzzy
+msgid ""
+"Installs l10n_cl_vat and\n"
+"dependencies in order to have the RUT validated correctly."
+msgstr ""
+"Instala l10n_cl_vat y sus\n"
+"dependencias, para tener el RUT validado correctamente."
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_account_vat_ledger:0
+msgid ""
+"Installs module l10n_cl_account_vat_ledger, allowing to\n"
+"export sales and purchases VAT ledger in XLS format. Requires Aeroo Reports."
+msgstr ""
+"Instala el módulo l10n_cl_account_vat_ledger, que permite exportar el libro "
+"de compras y ventas (IVA) en formato XLS. Requiere Aeroo Reports."
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_banks_sbif:0
+#, fuzzy
 msgid ""
 "Installs module l10n_cl_banks_sbif, and includes authorized\n"
 "banks, and financial institutions in Chile."
 msgstr ""
-"Installs module l10n_cl_banks_sbif, and includes authorized\n"
-"banks, and financial institutions in Chile."
+"Instala el módulo l10n_cl_banks_sbif, y incluye los bancos\n"
+"autorizados y las instituciones financieras de Chile."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_chart_of_account
-#: help:konos.base.config.settings,module_l10n_cl_chart_of_account:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_credit_card_voucher:0
+#, fuzzy
 msgid ""
-"Installs module l10n_cl_chart_of_account, and includes authorized\n"
-"chart of accounts in Chile."
+"Installs module l10n_cl_credit_card_voucher, allowing you\n"
+"to link the sales note with a credit card voucher, in order to keep\n"
+"it unreported in boletas sales."
 msgstr ""
-"Installs module l10n_cl_chart_of_account, and includes authorized\n"
-"chart of accounts in Chile."
+"Instala el módulo l10n_cl_credit_card_voucher, el cual le permite\n"
+"enlazar una nota de ventas con un voucher de venta con tarjeta de\n"
+"crédito, para mantener los mismos sin ser reportados para el IVA\n"
+"para cumplir con la resolución exenta Nro 5 / 2015 del SII."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_counties
-#: help:konos.base.config.settings,module_l10n_cl_counties:0
-msgid "Installs module l10n_cl_counties, and all counties in Chile."
-msgstr "Installs module l10n_cl_counties, and all counties in Chile."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_factoring
-#: help:konos.base.config.settings,module_l10n_cl_dte_factoring:0
-msgid "Installs module l10n_cl_dte_factoring, and all DTE requirements."
-msgstr "Installs module l10n_cl_dte_factoring, and all DTE requirements."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_financial_indicators
-#: help:konos.base.config.settings,module_l10n_cl_financial_indicators:0
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_financial_indicators:0
+#, fuzzy
 msgid ""
 "Installs module l10n_cl_financial_indicators, allowing to\n"
 "update indicators daily, from SBIF."
 msgstr ""
-"Installs module l10n_cl_financial_indicators, allowing to\n"
-"update indicators daily, from SBIF."
+"Instala el módulo l10n_cl_financial_indicators, que le permite\n"
+"actualizar los indicadores diariamente desde SBIF\n"
+"(UF, UTM, Dolar y Euro)."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_stock_picking
-#: help:konos.base.config.settings,module_l10n_cl_stock_picking:0
-msgid "Installs module l10n_cl_stock_picking, and all DTE requirements."
-msgstr "Installs module l10n_cl_stock_picking, and all DTE requirements."
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_aeroo_einvoice:0
+#: help:chilean.base.config.settings,module_l10n_cl_aeroo_stock:0
+#, fuzzy
+msgid ""
+"Installs output form report\n"
+"including PDF417 electronic stamp"
+msgstr ""
+"Instala formulario de salida\n"
+"incluyendo el timbre electrónico en formato PDF417."
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_dte
-#: help:konos.base.config.settings,module_l10n_cl_dte:0
-msgid "Installs module module_l10n_cl_dte, and all DTE requirements."
-msgstr "Installs module module_l10n_cl_dte, and all DTE requirements."
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_wssii_fe:0
+#, fuzzy
+msgid ""
+"Installs several dependencies in\n"
+"order to performn Electronic invoicing, sales reports in xml, and "
+msgstr ""
+"Instala varias dependencias para\n"
+"realizar facturación electrónica, reportes de ventas en xml, y"
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_l10n_cl_dte_caf
-#: help:konos.base.config.settings,module_l10n_cl_dte_caf:0
-msgid "Installs module module_l10n_cl_dte_caf, and all DTE requirements."
-msgstr "Installs module module_l10n_cl_dte_caf, and all DTE requirements."
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_invoice_printed:0
+#, fuzzy
+msgid "Invoice in TXT Format"
+msgstr "Factura/Boleta/Guia de Despacho en formato TXT"
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_account_cancel
-#: help:konos.base.config.settings,module_account_cancel:0
-msgid "Installs module_account_cancel."
-msgstr "Installs module_account_cancel."
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Invoicing"
+msgstr "Facturación"
 
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_account_payment_group
-#: help:konos.base.config.settings,module_account_payment_group:0
-msgid "Installs module_account_payment_group."
-msgstr "Installs module_account_payment_group."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_decimal_precision_currency
-#: help:konos.base.config.settings,module_decimal_precision_currency:0
-msgid "Installs module_decimal_precision_currency."
-msgstr "Installs module_decimal_precision_currency."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_global_discount
-#: help:konos.base.config.settings,module_global_discount:0
-msgid "Installs module_global_discount."
-msgstr "Installs module_global_discount."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_mass_editing
-#: help:konos.base.config.settings,module_mass_editing:0
-msgid "Installs module_mass_editing."
-msgstr "Installs module_mass_editing."
-
-#. module: konos_base
-#: model:ir.model.fields,help:konos_base.field_konos_base_config_settings_module_web_export_view
-#: help:konos.base.config.settings,module_web_export_view:0
-msgid "Installs module_web_export_view."
-msgstr "Installs module_web_export_view."
-
-#. module: konos_base
-#: model:ir.ui.menu,name:konos_base.menu_konos_base_configuration
-msgid "Konos Wizard"
-msgstr "Konos Wizard"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings___last_update
-#: field:konos.base.config.settings,__last_update:0
-msgid "Last Modified on"
-msgstr "Última modificación en"
-
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_write_uid
-#: field:konos.base.config.settings,write_uid:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,write_uid:0
+#, fuzzy
 msgid "Last Updated by"
-msgstr "Última actualización de"
+msgstr "Ultima actualización por:"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_write_date
-#: field:konos.base.config.settings,write_date:0
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,write_date:0
+#, fuzzy
 msgid "Last Updated on"
-msgstr "Última actualización en"
+msgstr "Ultima actualización:"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_mass_editing
-#: field:konos.base.config.settings,module_mass_editing:0
-msgid "Mass Editing"
-msgstr "Mass Editing"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Partner Activities"
+msgstr "Giros de Clientes/Proveedores"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_account_payment_group
-#: field:konos.base.config.settings,module_account_payment_group:0
-msgid "Payment Group"
-msgstr "Grupo de Pago"
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Partners"
+msgstr "Clientes/Proveedores"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_libro_compra_venta
-#: field:konos.base.config.settings,module_l10n_cl_libro_compra_venta:0
-msgid "Sales and Purchases Books"
-msgstr "Libro de Compras y Ventas"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_aeroo_receipt:0
+#, fuzzy
+msgid "Payment Receipt Form"
+msgstr "Formulario de Recibo de Pago"
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_financial_indicators
-#: field:konos.base.config.settings,module_l10n_cl_financial_indicators:0
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Payroll"
+msgstr "Liquidación de Sueldos"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_aeroo_purchase:0
+#, fuzzy
+msgid "Purchase Order Form"
+msgstr "Formulario de Orden de Compra"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Purchases"
+msgstr "Compras"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "RUT (VAT) Validation"
+msgstr "Validación de RUT (VAT)"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_account_bank_voucher:0
+#, fuzzy
+msgid ""
+"Reconcile payments directly importing vouchers to account bank statement"
+msgstr "Conciliar comprobantes de  Ingresos y Egresos con su cartola bancaria"
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_aeroo_receipt:0
+#, fuzzy
+msgid "Report for payment receipt"
+msgstr "Reporte para recibo de pago"
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_aeroo_purchase:0
+#, fuzzy
+msgid "Report for purchase order"
+msgstr "Reporte para orden de compra"
+
+#. module: l10n_cl_base
+#: help:chilean.base.config.settings,module_l10n_cl_aeroo_sale:0
+#, fuzzy
+msgid "Report for sales order"
+msgstr "Reporte para Orden de Venta"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Reporting"
+msgstr "Reportes"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_aeroo_sale:0
+#, fuzzy
+msgid "Sales Order Form"
+msgstr "Formulario para Orden de Venta"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "Send Files to Previred"
+msgstr "Enviar Archivos a Previred"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_hr_send_to_previred:0
+#, fuzzy
+msgid "Send payroll Information to Previred monthly"
+msgstr "Enviar información de liquidación de sueldos a Previred mensualmente."
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_hr_previred:0
+#, fuzzy
+msgid "Update Previred's Monthly indexes"
+msgstr "Actualizar los índices de Previred mensualmente."
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_financial_indicators:0
+#, fuzzy
 msgid "Update UF, UTM, Dollar and Euro automatically"
-msgstr "ActualizaUF, UTM, Dólar y Euro automáticamente"
+msgstr "Actualizar valor de UF, UTM, Dólar y Euro automáticamente."
 
-#. module: konos_base
-#: model:ir.model.fields,field_description:konos_base.field_konos_base_config_settings_module_l10n_cl_base_rut
-#: field:konos.base.config.settings,module_l10n_cl_base_rut:0
-msgid "Validate Chilean VAT (RUT) and format to 99.999.999-X"
-msgstr "Validar RUT chileno y da formato 99.999.999-X"
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_wssii_fe:0
+#, fuzzy
+msgid "Use Electronic Invoicing"
+msgstr "Utilizar Facturación Electrónica"
+
+#. module: l10n_cl_base
+#: field:chilean.base.config.settings,module_l10n_cl_vat:0
+#, fuzzy
+msgid "Validate Chilean VAT (RUT)"
+msgstr "Validar RUT (VAT)"
+
+#. module: l10n_cl_base
+#: view:chilean.base.config.settings:l10n_cl_base.view_chilean_base_configuration
+#, fuzzy
+msgid "or"
+msgstr "o"
