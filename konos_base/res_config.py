@@ -18,7 +18,7 @@ class konos_base_configuration(models.TransientModel):
         help="""Installs module module_l10n_cl_dte, and all DTE requirements.""")
 
     module_l10n_cl_dte_caf = fields.Boolean(
-        'DTE CAF',
+        'DTE CAF Folios',
         help="""Installs module module_l10n_cl_dte_caf, and all DTE requirements.""")
 
     module_l10n_cl_dte_factoring = fields.Boolean(
@@ -26,65 +26,65 @@ class konos_base_configuration(models.TransientModel):
         help="""Installs module l10n_cl_dte_factoring, and all DTE requirements.""")
 
     module_l10n_cl_stock_picking = fields.Boolean(
-        'Guías de Despacho Electrónicas',
+        'DTE Guías de Despacho Electrónicas',
         help="""Installs module l10n_cl_stock_picking, and all DTE requirements.""")
 
 
     module_l10n_cl_dte_point_of_sale = fields.Boolean(
-        'DTE Point of Sales',
+        'DTE Punto de Venta',
         help="""Installs module 10n_cl_dte_point_of_sale, and all DTE requirements.""")
 
 
 
     module_l10n_cl_counties = fields.Boolean(
-        'Counties in Chile',
+        'Comunas de Chile',
         help="""Installs module l10n_cl_counties, and all counties in Chile.""")
 
 
     module_l10n_cl_banks_sbif = fields.Boolean(
-        'Banks in Chile, According SBIF',
+        'Bancos en Chile',
         help="""Installs module l10n_cl_banks_sbif, and includes authorized
 banks, and financial institutions in Chile.""")
 
     module_l10n_cl_chart_of_account = fields.Boolean(
-        'Chart of Accounts SII',
+        'Plan de Cuentas SII',
         help="""Installs module l10n_cl_chart_of_account, and includes authorized
 chart of accounts in Chile.""")
 
 
     module_l10n_cl_libro_compra_venta = fields.Boolean(
-        'Sales and Purchases Books',
+        'Libros de Compra y Ventas',
         help="""Installs module  l10n_cl_libro_compra_venta, and includes authorized
 chart of accounts in Chile.""")
 
 
 
     module_l10n_cl_financial_indicators = fields.Boolean(
-        'Update UF, UTM, Dollar and Euro automatically',
+        'Indicadores Financieros',
         help="""Installs module l10n_cl_financial_indicators, allowing to
 update indicators daily, from SBIF.""")
 
 
     module_l10n_cl_invoice = fields.Boolean(
-        'Allows to have your stubs presented to the same sales journal',
+        'Facturación Chile',
         help="""Installs l10n_cl_invoice Link your invoicing, picking and
 receipts stubs with journals for easiest configuration.""")
 
 
 
     module_l10n_cl_partner_activities = fields.Boolean(
-        'Include Partner\'s Businness Activities', help="""Installs l10n_cl_partner_activities
+        'Giros en Chile - Actividades', help="""Installs l10n_cl_partner_activities
 module, which includes your partners' turns in their record using the SII
 activities table and allows you to select the activity when invoicing.""")
 
     module_l10n_cl_hr_payroll = fields.Boolean(
-        'Install payroll and AFPs chilean modules',
+        'Liquidaciones en Chile',
         help="""Install l10n_cl_hr_payroll for payroll and AFPs chilean
 modules""")
 
 
     module_l10n_cl_base_rut = fields.Boolean(
-        'Validate Chilean VAT (RUT) and format to 99.999.999-X',
+        'Formato de RUT 99.999.999-X',
         help="""Installs l10n_cl_base_rut in ordar to validate de VAT (RUT) \
         ant to have it formatted correctly, according Chilean usage.""")
 
@@ -103,7 +103,7 @@ modules""")
         help="""Installs module_decimal_precision_currency.""")
     
     module_mass_editing = fields.Boolean(
-        'Mass Editing',
+        'Edición Masiva',
         help="""Installs module_mass_editing.""")
 
     module_global_discount = fields.Boolean(
@@ -121,5 +121,37 @@ modules""")
     module_account_payment_group = fields.Boolean(
         'Payment Group',
         help="""Installs module_account_payment_group.""")
+
+    module_vit_journal_voucher = fields.Boolean(
+        'Impresión de Comprobantes Contables',
+        help="""Installs vit_journal_voucher.""")
+
+    module_l10n_cl_balance = fields.Boolean(
+        'Reportes Contables en Chile',
+        help="""Installs module_l10n_cl_balance.""")
+
+    module_layouts_custom = fields.Boolean(
+        'Layouts Custom',
+        help="""Installs module_layouts_custom.""")
+
+    module_customer_account_followup = fields.Boolean(
+        'Seguimiento de Cheques y Pagos',
+        help="""Installs module_customer_account_followup.""")
+
+    module_payroll_analytic_account = fields.Boolean(
+        'Centros de Costos en Liquidaciones',
+        help="""Installs module_payroll_analytic_account.""")
+
+    module_hr_holiday_exclude_special_days = fields.Boolean(
+        'Excluye Días Feriados y Fines de Semana',
+        help="""Installs module_hr_holiday_exclude_special_days.""")
+
+    module_auth_signup = fields.Boolean(
+        'Auth Signup',
+        help="""Installs module_auth_signup.""")
+
+    module_auto_backup = fields.Boolean(
+        'Auto Backup',
+        help="""Installs module_auto_backup.""")
 
 

@@ -23,9 +23,9 @@
 					</div>
 
 
-					<separator string="Partners" />
+					<separator string="Contactos" />
 					<group>
-						<label for="id" string="RUT (VAT) Validation"/>
+						<label for="id" string="Validación de Rut"/>
 						<div name="partners">
 							<div name='module_l10n_cl_base_rut'>
 								<field name="module_l10n_cl_base_rut"
@@ -40,9 +40,9 @@
 
 
 					
-					<separator string="Finance" />
+					<separator string="Finanzas" />
 					<group>
-						<label for="id" string="Finance" />	
+						<label for="id" string="Finanzas" />	
 
 						<!-- module_decimal_precision_currency -->
 
@@ -69,12 +69,36 @@
 									class="oe_inline" />
 								<label for="module_l10n_cl_libro_compra_venta" />
 							</div>
+							<div name='module_vit_journal_voucher'>
+								<field name="module_vit_journal_voucher"
+									class="oe_inline" />
+								<label for="module_vit_journal_voucher" />
+							</div>
+							<div name='module_l10n_cl_balance'>
+								<field name="module_l10n_cl_balance"
+									class="oe_inline" />
+								<label for="module_l10n_cl_balance" />
+							</div>
+							<div name='module_customer_account_followup'>
+								<field name="module_customer_account_followup"
+									class="oe_inline" />
+								<label for="module_customer_account_followup" />
+							</div>
 						</div>
 					</group>
 
-					<separator string="Purchases" />
+					<separator string="Compras" />
+					<group>
+						<label for="id" string="Formatos" />
+						<div name="module_layouts_custom">
+							<div name='module_layouts_custom'>
+								<field name="module_layouts_custom" class="oe_inline" />
+								<label for="module_layouts_custom" />
+							</div>
+						</div>
+					</group>
 
-					<separator string="Sales" />
+					<separator string="Ventas" />
 
 
 					<group>
@@ -138,8 +162,20 @@
 								<label for="module_l10n_cl_hr_payroll" />
 							</div>
 						</div>
-
+						<div name="payrollanalytic">
+							<div name='module_payroll_analytic_account'>
+								<field name="module_payroll_analytic_account" class="oe_inline" />
+								<label for="module_payroll_analytic_account" />
+							</div>
+						</div>
+						<div name="module_hr_holiday_exclude_special_days">
+							<div name='module_hr_holiday_exclude_special_days'>
+								<field name="module_hr_holiday_exclude_special_days" class="oe_inline" />
+								<label for="module_hr_holiday_exclude_special_days" />
+							</div>
+						</div>
 					</group>
+
 
 					<separator string="Recomended" />
 					<group>
@@ -191,7 +227,19 @@
 								<field name="module_account_payment_group" class="oe_inline" />
 								<label for="module_account_payment_group" />
 							</div>
-						</div>						
+						</div>	
+						<div name="Recupera Contraseña">
+							<div name='module_auth_signup'>
+								<field name="module_auth_signup" class="oe_inline" />
+								<label for="module_auth_signup" />
+							</div>
+						</div>	
+						<div name="Respaldos Automáticos">
+							<div name='module_auto_backup'>
+								<field name="module_auto_backup" class="oe_inline" />
+								<label for="module_auto_backup" />
+							</div>
+						</div>					
 					</group>
 				</form>
 			</field>

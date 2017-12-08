@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Konos - Easy Installation Wizard',
-    'version': '1.0',
+    'version': '2.0',
     'category': 'Chilean Localization',
     'license': 'AGPL-3',
     'sequence': 14,
