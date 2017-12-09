@@ -239,7 +239,13 @@
 								<field name="module_auto_backup" class="oe_inline" />
 								<label for="module_auto_backup" />
 							</div>
-						</div>					
+						</div>
+						<div name="Documentos Adjuntos">
+							<div name='document'>
+								<field name="module_document" class="oe_inline" />
+								<label for="module_document" />
+							</div>
+						</div>						
 					</group>
 				</form>
 			</field>

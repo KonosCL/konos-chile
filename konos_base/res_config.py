@@ -154,4 +154,6 @@ modules""")
         'Auto Backup',
         help="""Installs module_auto_backup.""")
 
-
+    module_document = fields.Boolean(
+        'Documentos Adjuntos',
+        help="""Installs module_document.""")
