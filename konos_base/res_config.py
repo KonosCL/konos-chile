@@ -157,3 +157,16 @@ modules""")
     module_document = fields.Boolean(
         'Documentos Adjuntos',
         help="""Installs module_document.""")
+
+    module_account_financial_report_qweb = fields.Boolean(
+        'Reportes Financieros OCA QWEB',
+        help="""Installs module_account_financial_report_qweb.""")
+
+    module_account_general_ledger_filter = fields.Boolean(
+        'Auxiliares Contables - Filtros de Cuentas Libro Mayor',
+        help="""Installs module_account_general_ledger_filter.""")
+
+
+
+
+

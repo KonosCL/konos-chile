@@ -245,7 +245,19 @@
 								<field name="module_document" class="oe_inline" />
 								<label for="module_document" />
 							</div>
-						</div>						
+						</div>	
+						<div name="Reportes Financieros OCA">
+							<div name='account_financial_report_qweb'>
+								<field name="module_account_financial_report_qweb" class="oe_inline" />
+								<label for="module_account_financial_report_qweb" />
+							</div>
+						</div>	
+						<div name="Auxiliares Contables - Filtros de Cuentas Libro Mayor">
+							<div name='account_general_ledger_filter'>
+								<field name="module_account_general_ledger_filter" class="oe_inline" />
+								<label for="module_account_general_ledger_filter" />
+							</div>
+						</div>	
 					</group>
 				</form>
 			</field>
